@@ -105,8 +105,6 @@ ADMIN_PASSWORD_HASH=bycrypt_hash_passowrd
 ```bash
 cd ../smart-contract
 npm install
-npx hardhat compile
-npx hardhat node
 ```
 Deploy contract:
 ```bash
@@ -130,6 +128,7 @@ npm install
    ```
 2. Deploy Smart Contract (pastikan network `localhost`):
    ```bash
+   npx hardhat compile
    npx hardhat run scripts/deploy.js --network localhost
    ```
 3. Jalankan Backend:
