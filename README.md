@@ -149,6 +149,8 @@ npm install
 - Gunakan **JWT_SECRET** yang panjang & unik untuk keamanan token.
 - Gunakan API key Pinata yang valid untuk upload ke IPFS.
 - Pastikan alamat smart contract (`SMART_CONTRACT_ADDRESS`) sesuai hasil deploy.
+- Admin private key copy dari terminal saat telah menjalankan node local
+<!-- - Sebelum menjalankan, copy abi hasil deploy dari smart-contract/artifacts/contracts/CertificateRegistry.json ke backend/abi/ -->
 
 ---
 
