@@ -1,0 +1,32 @@
+# Node
+**/node_modules/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+
+# Env & kredensial
+.env
+**/.env
+backend/.env
+frontend/.env
+
+# Build artefacts
+frontend/build/
+frontend/dist/
+backend/dist/
+
+# Upload & output runtime
+backend/uploads/
+backend/cert-metadata.json
+backend/*.pdf
+backend/*.png
+
+# Hardhat artefacts
+smart-contract/artifacts/
+smart-contract/cache/
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
