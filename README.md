@@ -77,8 +77,8 @@ CERTIFICATE-GEN-VER/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/<username>/<repo>.git
-cd CERTIFICATE-GEN-VER
+git clone https://github.com/syarifulmujaddiq/certificate-gen-ver.git
+cd certificate-gen-ver
 ```
 
 ### 2. Setup Backend
@@ -91,13 +91,14 @@ npm install
 
 Contoh `.env`:
 ```env
-PORT=5000
 PINATA_API_KEY=your_pinata_key
 PINATA_API_SECRET=your_pinata_secret
 BLOCKCHAIN_RPC_URL=http://127.0.0.1:8545
 SMART_CONTRACT_ADDRESS=0xContractAddressHere
 ADMIN_PRIVATE_KEY=0xYourPrivateKeyHere
 JWT_SECRET=use-a-long-random-string-here
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD_HASH=bycrypt_hash_passowrd
 ```
 
 ### 3. Setup Smart Contract
@@ -110,13 +111,13 @@ npx hardhat node
 Deploy contract:
 ```bash
 npx hardhat run scripts/deploy.js --network localhost
+copy contract address
 ```
 
 ### 4. Setup Frontend
 ```bash
 cd ../frontend
 npm install
-npm start
 ```
 
 ---
@@ -145,12 +146,9 @@ npm start
 ---
 
 ## 📌 Catatan Penting
-- Jangan commit file `.env` ke GitHub (sudah diatur di `.gitignore`).
 - Gunakan **JWT_SECRET** yang panjang & unik untuk keamanan token.
 - Gunakan API key Pinata yang valid untuk upload ke IPFS.
 - Pastikan alamat smart contract (`SMART_CONTRACT_ADDRESS`) sesuai hasil deploy.
 
 ---
 
-## 📜 Lisensi
-MIT License © 2025
